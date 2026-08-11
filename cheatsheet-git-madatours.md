@@ -24,12 +24,12 @@ Le texte entre guillemets, c'est toi qui l'écris — décris en 5 mots ce que t
 
 ## 🟢 Les 3 commandes que tu utilises tout le temps
 
-| Commande | Ce que ça fait, en simple |
+|Commande|Ce que ça fait, en simple|
 |---|---|
-| `git status` | Montre ce que tu as changé depuis la dernière fois |
-| `git add .` | Prépare tous tes changements pour les sauvegarder |
-| `git commit -m "..."` | Sauvegarde ces changements, avec une description |
-| `git push` | Envoie la sauvegarde sur GitHub (sur internet) |
+|`git status`|Montre ce que tu as changé depuis la dernière fois|
+|`git add .`|Prépare tous tes changements pour les sauvegarder|
+|`git commit -m "..."`|Sauvegarde ces changements, avec une description|
+|`git push`|Envoie la sauvegarde sur GitHub (sur internet)|
 
 Tape `git status` souvent. C'est sans danger, ça ne change rien, ça te dit juste où tu en es.
 
@@ -96,11 +96,11 @@ Ces commandes existent pour "nettoyer" ou "annuler". Le problème : elles efface
 
 **Avant de taper une commande de cette liste, demande-toi toujours : "est-ce que j'ai déjà sauvegardé (`git commit`) mon travail avant ?" Si tu n'es pas sûr → ne tape rien, fais d'abord `git status` et montre-moi le résultat.**
 
-| Commande | Ce qu'elle efface |
+|Commande|Ce qu'elle efface|
 |---|---|
-| `git restore .` | Tout ce que tu as changé depuis ta dernière sauvegarde. Définitivement. |
-| `git checkout -- .` | Pareil que ci-dessus. |
-| `git reset --hard` | Pareil, en pire. |
+|`git restore .`|Tout ce que tu as changé depuis ta dernière sauvegarde. Définitivement.|
+|`git checkout -- .`|Pareil que ci-dessus.|
+|`git reset --hard`|Pareil, en pire.|
 
 C'est très probablement une de ces commandes qui a effacé ton travail sur l'accueil et les autres pages — pas une erreur de ta part, juste une commande dont l'effet n'était pas clair.
 
@@ -109,6 +109,7 @@ C'est très probablement une de ces commandes qui a effacé ton travail sur l'ac
 ## 📋 Copier-coller rapide (les cas les plus fréquents)
 
 **Sauvegarder mon travail du jour :**
+
 ```bash
 git add .
 git commit -m "decris ici ce que tu as fait"
@@ -116,6 +117,7 @@ git push
 ```
 
 **Commencer une nouvelle tâche :**
+
 ```bash
 git checkout develop
 git pull
@@ -123,6 +125,7 @@ git checkout -b feature/nom-de-ta-tache
 ```
 
 **Récupérer les derniers changements de l'équipe avant de coder :**
+
 ```bash
 git checkout develop
 git pull
@@ -150,15 +153,18 @@ cd ..
 
 ## 🧯 En cas de souci
 
-**"Mon site sur Vercel ne change pas après un push"**
+### "Mon site sur Vercel ne change pas après un push"
+
 1. Vérifie que tu as bien fait `git push` (pas juste `git commit`)
 2. Vérifie que tu es sur la bonne branche : `git branch --show-current`
 3. Vérifie sur le site de Vercel, section "Deployments", s'il y a une erreur
 
-**"J'ai un conflit quand je fais `git merge`"**
+### "J'ai un conflit quand je fais `git merge`"
+
 Git va te dire quels fichiers posent problème. Ouvre-les, montre-les moi, je t'aide à choisir la bonne version à garder.
 
-**"Je ne sais pas ce que je risque avec une commande"**
+### "Je ne sais pas ce que je risque avec une commande"
+
 Ne la tape pas. Montre-la moi d'abord, je te dis ce qu'elle fait avant que tu l'exécutes.
 
 ---
