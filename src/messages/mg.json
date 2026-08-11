@@ -1,4 +1,102 @@
 {
+  "Navbar": {
+    "ariaLabel": "Fitantanana lehibe",
+    "openMenu": "Sokafy ny tolotra",
+    "closeMenu": "Hidio ny tolotra",
+    "links": {
+      "excursions": "Fitsangantsanganana",
+      "tours": "Fizahan-tany",
+      "gallery": "Sary",
+      "reviews": "Hevitra",
+      "about": "Momba anay",
+      "contact": "Fifandraisana"
+    }
+  },
+  "Footer": {
+    "slogan": "Manomboka eto ny dianao any Madagasikara.",
+    "socialsAriaLabel": "Tambajotra sosialy",
+    "homeAriaLabel": "Fandraisana",
+    "contactTitle": "Fifandraisana",
+    "navigationTitle": "Navigation",
+    "aboutTitle": "Momba anay",
+    "aboutText": " dia manolotra ireo fitsangantsanganana sy fizahan-tany tsara indrindra eto Madagasikara — hatramin'ny morontsiraka ka hatramin'ny tany avo, natao ho an'ny fitsangantsanganana sy fahafahana.",
+    "aboutTextSmall": "Fanamboarana an-tserasera, mpitari-dàlana eo an-toerana, fizahan-tany natao araka ny filàna manerana ny nosy.",
+    "links": {
+      "home": "Fandraisana",
+      "excursions": "Fitsangantsanganana",
+      "tours": "Fizahan-tany",
+      "reviews": "Hevitra",
+      "contact": "Fifandraisana"
+    },
+    "copyright": "© {year} MadaTours. Zo rehetra voatokana.",
+    "socials": {
+      "instagram": "Instagram",
+      "youtube": "YouTube",
+      "email": "Mailaka",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook"
+    }
+  },
+  "Home": {
+    "hero": {
+      "eyebrow": "Madagasikara, amin'ny fomba hafa",
+      "title": "Tsapao i Madagasikara toy ny toerana marina, fa tsy sary kapoaka fotsiny",
+      "subtitle": "Fitsangantsanganana sy fizahan-tany noforonina niaraka amin'ireo mpitari-dàlana eo an-toerana, mba hahafantarana ny tena harenan'ny nosy — natiora, kolontsaina ary fifandraisana tena izy.",
+      "ctaPrimary": "Hijery ireo fitsangantsanganana",
+      "ctaSecondary": "Hijery ireo fizahan-tany"
+    },
+    "values": {
+      "title": "Nahoana no mitsangantsangana miaraka amin'ny MadaTours",
+      "items": {
+        "authenticity": {
+          "title": "Fahamarinana",
+          "description": "Asongadinay ny kolontsaina, ny fomban-drazana ary ny tontolo iainana marin'i Madagasikara."
+        },
+        "trust": {
+          "title": "Fahatokiana",
+          "description": "Fifandraisana mangarahara amin'ny dingana rehetra, hatramin'ny fifandraisana voalohany ka hatramin'ny fiverenana."
+        },
+        "respect": {
+          "title": "Fanajana",
+          "description": "Fizahan-tany manaja ny mponina eo an-toerana sy ny tontolo iainana."
+        }
+      }
+    },
+    "featured": {
+      "eyebrow": "Aza very",
+      "title": "Ireo fitsangantsanganana be mpitia indrindra",
+      "subtitle": "Fijerena kely an'izay miandry anao manodidina an'i Nosy Be.",
+      "cta": "Hijery ny fitsangantsanganana rehetra"
+    },
+    "closing": {
+      "title": "Maniry fizahan-tany maharitra andro maromaro?",
+      "subtitle": "Ny fizahan-taninay dia mampiray toerana maro mba hahazoana traikefa feno.",
+      "cta": "Hizaha ireo fizahan-tany"
+    },
+    "howItWorks": {
+      "title": "Ahoana no fomba fiasa",
+      "steps": {
+        "choose": {
+          "title": "Safidio",
+          "description": "Jereo ireo fitsangantsanganana sy fizahan-tany, ka safidio izay mahafinaritra anao."
+        },
+        "request": {
+          "title": "Alefaso ny fangatahanao",
+          "description": "Mifandraisa aminay miaraka amin'ny daty sy ny isan'ny mpandeha."
+        },
+        "travel": {
+          "title": "Mandehana mizaha tany",
+          "description": "Izahay no miandraikitra ny antsipirihany, ianao kosa mankafy ny dia."
+        }
+      }
+    },
+    "featuredTours": {
+      "eyebrow": "Fizahan-tany malaza",
+      "title": "Ireo fizahan-taninay feno indrindra",
+      "subtitle": "Ho an'ny fitsidihana andro maromaro manerana ny faritra avaratr'i Madagasikara.",
+      "cta": "Hijery ny fizahan-tany rehetra"
+    }
+  },
   "Excursions": {
     "pageTitle": "Ny fitsangatsanganana ataonay",
     "pageIntro": "Zavatra valo hahalalana an'i Nosy Be amin'ny fomba hafa: nosy miafina, faritra arovana, ary fihaonana amin'ny biby an-dranomasina.",

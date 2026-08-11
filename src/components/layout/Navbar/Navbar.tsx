@@ -2,28 +2,32 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import styles from "./Navbar.module.css";
 
-/* Liens de navigation — PLACEHOLDER, à remplacer par les vraies
-   pages une fois le contenu réel disponible (Features/*.md). */
+/* Liens de navigation — les clés "gallery" et "reviews" pointent vers des
+   pages non encore documentées dans Features/ (décision en attente, voir
+   Task-Board). Le TEXTE est maintenant traduit dans les 3 langues même si
+   la page elle-même reste à trancher. */
 const NAV_LINKS = [
-  { label: "Excursions", href: "/excursions" },
-  { label: "Tours", href: "/tours" },
-  { label: "Galerie", href: "/galerie" },
-  { label: "Avis", href: "/avis" },
-  { label: "À propos", href: "/a-propos" },
-  { label: "Contact", href: "/contact" },
-];
+  { key: "excursions", href: "/excursions" },
+  { key: "tours", href: "/tours" },
+  { key: "gallery", href: "/galerie" },
+  { key: "reviews", href: "/avis" },
+  { key: "about", href: "/a-propos" },
+  { key: "contact", href: "/contact" },
+] as const;
 
 /* Doit correspondre au breakpoint utilisé dans Navbar.module.css
    (768px) — en attendant Responsive.md. */
 const DESKTOP_BREAKPOINT = 768;
 
 export function Navbar() {
+  const t = useTranslations("Navbar");
   const [isOpen, setIsOpen] = useState(false);
 
   /* Ferme automatiquement le menu mobile si la fenêtre est
@@ -42,7 +46,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className={styles.navbar} aria-label="Navigation principale">
+    <nav className={styles.navbar} aria-label={t("ariaLabel")}>
       {/* Logo — chemin "/logo.svg" à ajuster selon le nom réel
           de ton fichier une fois déposé dans public/ */}
       <Link href="/" className={styles.logo}>
@@ -53,7 +57,7 @@ export function Navbar() {
         {NAV_LINKS.map((link) => (
           <li key={link.href}>
             <Link href={link.href} className={styles.link}>
-              {link.label}
+              {t(`links.${link.key}`)}
             </Link>
           </li>
         ))}
@@ -72,7 +76,7 @@ export function Navbar() {
           onClick={() => setIsOpen((prev) => !prev)}
           aria-expanded={isOpen}
           aria-controls="navbar-mobile-menu"
-          aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
+          aria-label={isOpen ? t("closeMenu") : t("openMenu")}
         >
           {isOpen ? <FaXmark size={24} /> : <FaBars size={24} />}
         </button>
@@ -83,7 +87,7 @@ export function Navbar() {
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <Link href={link.href} className={styles.link} onClick={() => setIsOpen(false)}>
-                {link.label}
+                {t(`links.${link.key}`)}
               </Link>
             </li>
           ))}

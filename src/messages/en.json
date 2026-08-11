@@ -1,4 +1,102 @@
 {
+  "Navbar": {
+    "ariaLabel": "Main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "links": {
+      "excursions": "Excursions",
+      "tours": "Tours",
+      "gallery": "Gallery",
+      "reviews": "Reviews",
+      "about": "About",
+      "contact": "Contact"
+    }
+  },
+  "Footer": {
+    "slogan": "Your Malagasy adventure starts here.",
+    "socialsAriaLabel": "Social media",
+    "homeAriaLabel": "Home",
+    "contactTitle": "Contact",
+    "navigationTitle": "Navigation",
+    "aboutTitle": "About",
+    "aboutText": " brings you the best excursions and tours in Madagascar — from the coast to the highlands, designed for adventure and escape.",
+    "aboutTextSmall": "Online booking, local guides, tailor-made tours across the island.",
+    "links": {
+      "home": "Home",
+      "excursions": "Excursions",
+      "tours": "Tours",
+      "reviews": "Reviews",
+      "contact": "Contact"
+    },
+    "copyright": "© {year} MadaTours. All rights reserved.",
+    "socials": {
+      "instagram": "Instagram",
+      "youtube": "YouTube",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook"
+    }
+  },
+  "Home": {
+    "hero": {
+      "eyebrow": "Madagascar, differently",
+      "title": "Experience Madagascar as a place, not a postcard",
+      "subtitle": "Excursions and tours designed with local guides, to discover the island's real richness — nature, culture, and authentic encounters.",
+      "ctaPrimary": "Discover excursions",
+      "ctaSecondary": "See tours"
+    },
+    "values": {
+      "title": "Why travel with MadaTours",
+      "items": {
+        "authenticity": {
+          "title": "Authenticity",
+          "description": "We showcase Madagascar's real culture, traditions, and landscapes, without staging."
+        },
+        "trust": {
+          "title": "Trust",
+          "description": "A transparent relationship at every step, from first contact to your return home."
+        },
+        "respect": {
+          "title": "Respect",
+          "description": "Responsible tourism that benefits local communities and preserves the places you visit."
+        }
+      }
+    },
+    "featured": {
+      "eyebrow": "Don't miss",
+      "title": "Our most popular excursions",
+      "subtitle": "A glimpse of what awaits you around Nosy Be.",
+      "cta": "See all excursions"
+    },
+    "closing": {
+      "title": "Looking for a multi-day tour?",
+      "subtitle": "Our tours combine several destinations for a full immersion.",
+      "cta": "Explore tours"
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "steps": {
+        "choose": {
+          "title": "Choose",
+          "description": "Browse our excursions and tours, and find the one that suits you."
+        },
+        "request": {
+          "title": "Send your request",
+          "description": "Contact us with your dates and number of travelers."
+        },
+        "travel": {
+          "title": "Set off on your adventure",
+          "description": "We handle the details, you enjoy the trip."
+        }
+      }
+    },
+    "featuredTours": {
+      "eyebrow": "Popular tours",
+      "title": "Our most complete tours",
+      "subtitle": "For a multi-day immersion across northern Madagascar.",
+      "cta": "See all tours"
+    }
+  },
   "Excursions": {
     "pageTitle": "Our excursions",
     "pageIntro": "Eight ways to experience Nosy Be differently: secret islands, nature reserves, and encounters with marine wildlife.",
