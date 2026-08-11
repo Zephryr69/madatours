@@ -4,6 +4,7 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "links": {
+      "home": "Home",
       "excursions": "Excursions",
       "tours": "Tours",
       "gallery": "Gallery",

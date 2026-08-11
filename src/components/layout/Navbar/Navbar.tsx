@@ -14,6 +14,7 @@ import styles from "./Navbar.module.css";
    Task-Board). Le TEXTE est maintenant traduit dans les 3 langues même si
    la page elle-même reste à trancher. */
 const NAV_LINKS = [
+  { key: "home", href: "/" },
   { key: "excursions", href: "/excursions" },
   { key: "tours", href: "/tours" },
   { key: "gallery", href: "/galerie" },
