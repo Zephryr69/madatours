@@ -6,6 +6,16 @@ Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 ## [Non publié]
 
 ### Ajouté
+- **Page d'accueil** (`src/app/[locale]/page.tsx`, `page.module.css`) : refonte complète (hero, section valeurs, excursions/tours en avant), remplace l'ancienne vitrine de composants. Namespace `Home` complet dans `messages/*.json`.
+- **`src/components/ui/Button/LinkButton.tsx`** : variante lien de `Button`.
+- **`src/components/ui/Reveal/Reveal.tsx`** : apparition au scroll, respecte `prefers-reduced-motion`.
+- **Système d'images** (`src/lib/images.ts`, `src/components/ui/SafeImage/`) : convention de nommage par slug (`public/images/<section>/<slug>/cover.jpg`), repli automatique sur un placeholder si une photo manque. Toutes les photos de couverture (8 excursions + 7 tours) ajoutées.
+- **`CardImage`** (`src/components/ui/Card/Card.tsx`) : utilise maintenant `<SafeImage>` en interne, prend une prop `fallbackSrc` obligatoire.
+
+### Corrigé
+- **`tsconfig.json`** : exclusion du sous-module `ToursNosyMada`, dont une version désynchronisée d'`ExcursionCard`/`TourCard` faisait échouer `tsc` sur le projet principal.
+- **Fichiers de types renommés** : `types/Excursion.ts` → `types/excursion.types.ts`, `types/Tour.ts` → `types/tour.types.ts`, conformément à `Architecture.md §5`.
+- **`tokens.css`** : ajout des tokens d'easing `--ease-standard`/`--ease-out`/`--ease-in` définis dans `Animations.md §4` mais jamais implémentés. Tous les usages du mot-clé CSS brut `ease-out` (`Card`, `Reveal`, `LanguageSwitcher`, page d'accueil) basculés sur `var(--ease-out)`, qui est une courbe différente et plus fidèle à la doc.
 - **`src/app/[locale]/tours/[slug]/page.tsx`** : page détail d'un circuit. Itinéraire jour par jour non modélisé (spec : "à structurer une fois le contenu rédigé"). Pas de bouton réservation — Phase 5 bloquée.
 - **`src/app/[locale]/tours/page.tsx`** : page listing des circuits.
 - **`src/components/cards/TourCard/`** : composant carte circuit, même structure qu'`ExcursionCard`. Durée affichée via un format ICU pluriel (`{days} jours / {nights} nuits`), testé avec `intl-messageformat`.

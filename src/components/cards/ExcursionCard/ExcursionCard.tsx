@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Card, CardImage, CardBody } from "@/components/ui/Card/Card";
 import { getCoverImage, getPlaceholderImage } from "@/lib/images";
-import type { Excursion } from "@/types/Excursion";
+import type { Excursion } from "@/types/excursion.types";
 import styles from "./ExcursionCard.module.css";
 
 interface ExcursionCardProps {

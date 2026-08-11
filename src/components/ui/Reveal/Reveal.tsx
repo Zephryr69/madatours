@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode } from "react";
-import styles from "./Reveal.module.css";
+import { motion, useReducedMotion } from "framer-motion";
+import type { ReactNode } from "react";
 
 interface RevealProps {
   children: ReactNode;
@@ -12,44 +12,36 @@ interface RevealProps {
 
 /**
  * Fait apparaître son contenu (fondu + léger déplacement vers le haut) la
- * première fois qu'il entre dans le viewport. Respecte
- * `prefers-reduced-motion` : dans ce cas, le contenu s'affiche directement,
- * sans animation.
+ * première fois qu'il entre dans le viewport.
+ *
+ * Implémenté avec Framer Motion, conformément à Animations.md §3 : une
+ * apparition séquencée (plusieurs <Reveal> avec des `delay` différents,
+ * ex. les cartes d'une grille) est une orchestration, pas une simple
+ * micro-interaction — donc pas du CSS pur.
+ *
+ * Durée et courbe = tokens du projet (Animations.md §4) :
+ * --duration-slow (300ms) et --ease-out (cubic-bezier(0, 0, 0.2, 1)),
+ * la courbe prescrite pour "les éléments qui apparaissent".
+ *
+ * Respecte prefers-reduced-motion via useReducedMotion() : dans ce cas,
+ * le contenu s'affiche directement, sans mouvement.
  */
 export function Reveal({ children, className, delay = 0 }: RevealProps) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-
-    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (prefersReducedMotion) {
-      setVisible(true);
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.15 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
+  const shouldReduceMotion = useReducedMotion();
 
   return (
-    <div
-      ref={ref}
-      className={[styles.reveal, visible ? styles.visible : "", className ?? ""].filter(Boolean).join(" ")}
-      style={{ transitionDelay: visible ? `${delay}ms` : "0ms" }}
+    <motion.div
+      className={className}
+      initial={shouldReduceMotion ? false : { opacity: 0, y: 28 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{
+        duration: shouldReduceMotion ? 0 : 0.3, // --duration-slow (300ms)
+        ease: [0, 0, 0.2, 1], // --ease-out
+        delay: shouldReduceMotion ? 0 : delay / 1000,
+      }}
     >
       {children}
-    </div>
+    </motion.div>
   );
 }

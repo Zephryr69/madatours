@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Card, CardImage, CardBody } from "@/components/ui/Card/Card";
 import { getCoverImage, getPlaceholderImage } from "@/lib/images";
-import type { Tour } from "@/types/Tour";
+import type { Tour } from "@/types/tour.types";
 import styles from "./TourCard.module.css";
 
 interface TourCardProps {
