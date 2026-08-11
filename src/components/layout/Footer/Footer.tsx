@@ -16,6 +16,7 @@ const NAV_LINKS = [
   { key: "home", href: "/" },
   { key: "excursions", href: "/excursions" },
   { key: "tours", href: "/tours" },
+  { key: "gallery", href: "/galerie" },
   { key: "reviews", href: "/avis" },
   { key: "contact", href: "/contact" },
 ] as const;
