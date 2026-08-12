@@ -100,6 +100,7 @@
     }
   },
   "Excursions": {
+    "eyebrow": "Indray andro na fitsangatsanganana",
     "pageTitle": "Ny fitsangatsanganana ataonay",
     "pageIntro": "Zavatra valo hahalalana an'i Nosy Be amin'ny fomba hafa: nosy miafina, faritra arovana, ary fihaonana amin'ny biby an-dranomasina.",
     "filters": {
@@ -192,6 +193,7 @@
     }
   },
   "Tours": {
+    "eyebrow": "Dia feno",
     "pageTitle": "Ny dianay",
     "pageIntro": "Dia fito hitsidihana ny Avaratr'i Madagasikara amin'ny fomba hafa, na kely na lava.",
     "themes": {

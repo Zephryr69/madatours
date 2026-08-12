@@ -100,6 +100,7 @@
     }
   },
   "Excursions": {
+    "eyebrow": "À la journée ou en séjour",
     "pageTitle": "Nos excursions",
     "pageIntro": "Huit expériences pour découvrir Nosy Be autrement : îles secrètes, réserves naturelles et rencontres avec la faune marine.",
     "filters": {
@@ -192,6 +193,7 @@
     }
   },
   "Tours": {
+    "eyebrow": "Circuits complets",
     "pageTitle": "Nos circuits",
     "pageIntro": "Sept circuits pour explorer le nord de Madagascar autrement, de quelques jours à une immersion complète.",
     "themes": {

@@ -100,6 +100,7 @@
     }
   },
   "Excursions": {
+    "eyebrow": "Day trips or short stays",
     "pageTitle": "Our excursions",
     "pageIntro": "Eight ways to experience Nosy Be differently: secret islands, nature reserves, and encounters with marine wildlife.",
     "filters": {
@@ -192,6 +193,7 @@
     }
   },
   "Tours": {
+    "eyebrow": "Full itineraries",
     "pageTitle": "Our tours",
     "pageIntro": "Seven tours to explore northern Madagascar differently, from a few days to a full immersion.",
     "themes": {
