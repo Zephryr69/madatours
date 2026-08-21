@@ -271,5 +271,85 @@
         ]
       }
     }
+  },
+  "Contact": {
+    "eyebrow": "A question? A travel idea?",
+    "pageTitle": "Contact us",
+    "pageIntro": "A question about an excursion, a tour, or ready to book? Write to us, our team replies quickly.",
+    "form": {
+      "nameLabel": "Full name",
+      "namePlaceholder": "E.g. John Smith",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "E.g. john.smith@email.com",
+      "phoneLabel": "Phone (optional)",
+      "phonePlaceholder": "E.g. +261 00 00 000 00",
+      "subjectLabel": "Subject",
+      "subjectOptions": {
+        "general": "General question",
+        "booking": "Booking request"
+      },
+      "messageLabel": "Your message",
+      "messagePlaceholder": "Describe your request — for a booking, mention the excursion or tour you're interested in.",
+      "submit": "Send message",
+      "errors": {
+        "nameRequired": "Full name is required.",
+        "emailRequired": "Email address is required.",
+        "emailInvalid": "Please enter a valid email address.",
+        "messageRequired": "Message is required."
+      },
+      "successTitle": "Message ready to send",
+      "successMessage": "The form isn't connected to a server yet — that will be done in a future step. For now, reach us directly by phone or social media."
+    },
+    "sidebar": {
+      "title": "Reach us directly",
+      "phoneLabel": "Phone",
+      "socialsTitle": "Social media"
+    }
+  },
+  "About": {
+    "eyebrow": "Who we are",
+    "pageTitle": "About MadaTours",
+    "pageIntro": "MadaTours is an agency specialized in discovering Madagascar. Our mission is to offer travelers authentic, immersive and responsible experiences, through the island's natural, cultural and human richness.",
+    "vision": {
+      "title": "Our vision",
+      "text": "To become a reference for tourism in Madagascar, offering a modern digital experience and a travel organization that is simple, reliable and inspiring."
+    },
+    "mission": {
+      "title": "Our mission",
+      "text": "To let every traveler discover Madagascar with full confidence, through an intuitive platform, quality tours and professional support."
+    },
+    "values": {
+      "title": "Our values",
+      "items": {
+        "authenticity": {
+          "title": "Authenticity",
+          "description": "Showcasing Madagascar's culture, traditions and landscapes."
+        },
+        "trust": {
+          "title": "Trust",
+          "description": "Building a transparent relationship with every traveler."
+        },
+        "excellence": {
+          "title": "Excellence",
+          "description": "Providing quality service at every step of the journey."
+        },
+        "respect": {
+          "title": "Respect",
+          "description": "Promoting responsible and sustainable tourism."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "Using modern technology to improve the user experience."
+        }
+      }
+    },
+    "promise": {
+      "title": "Our promise",
+      "text": "Every trip booked with MadaTours should mean peace of mind, discovery, and unforgettable memories."
+    },
+    "closing": {
+      "title": "Ready to start your journey?",
+      "cta": "Discover our excursions"
+    }
   }
 }

@@ -271,5 +271,85 @@
         ]
       }
     }
+  },
+  "Contact": {
+    "eyebrow": "Une question ? Une envie de voyage ?",
+    "pageTitle": "Contactez-nous",
+    "pageIntro": "Une question sur une excursion, un circuit, ou une envie de réserver ? Écrivez-nous, notre équipe vous répond rapidement.",
+    "form": {
+      "nameLabel": "Nom complet",
+      "namePlaceholder": "Ex. Jean Dupont",
+      "emailLabel": "Adresse e-mail",
+      "emailPlaceholder": "Ex. jean.dupont@email.com",
+      "phoneLabel": "Téléphone (optionnel)",
+      "phonePlaceholder": "Ex. +261 00 00 000 00",
+      "subjectLabel": "Objet de votre message",
+      "subjectOptions": {
+        "general": "Question générale",
+        "booking": "Demande de réservation"
+      },
+      "messageLabel": "Votre message",
+      "messagePlaceholder": "Décrivez votre demande — pour une réservation, précisez l'excursion ou le circuit qui vous intéresse.",
+      "submit": "Envoyer le message",
+      "errors": {
+        "nameRequired": "Le nom complet est obligatoire.",
+        "emailRequired": "L'adresse e-mail est obligatoire.",
+        "emailInvalid": "Veuillez saisir une adresse e-mail valide.",
+        "messageRequired": "Le message est obligatoire."
+      },
+      "successTitle": "Message prêt à être envoyé",
+      "successMessage": "L'envoi réel du formulaire n'est pas encore branché à un serveur — ce sera fait dans une prochaine étape. Pour l'instant, contactez-nous directement par téléphone ou réseaux sociaux ci-contre."
+    },
+    "sidebar": {
+      "title": "Nous joindre directement",
+      "phoneLabel": "Téléphone",
+      "socialsTitle": "Réseaux sociaux"
+    }
+  },
+  "About": {
+    "eyebrow": "Qui sommes-nous",
+    "pageTitle": "À propos de MadaTours",
+    "pageIntro": "MadaTours est une agence spécialisée dans la découverte de Madagascar. Notre mission est d'offrir aux voyageurs des expériences authentiques, immersives et responsables, à travers les richesses naturelles, culturelles et humaines de l'île.",
+    "vision": {
+      "title": "Notre vision",
+      "text": "Devenir une référence du tourisme à Madagascar, en proposant une expérience numérique moderne et une organisation de voyage simple, fiable et inspirante."
+    },
+    "mission": {
+      "title": "Notre mission",
+      "text": "Permettre à chaque voyageur de découvrir Madagascar en toute confiance, grâce à une plateforme intuitive, des circuits de qualité et un accompagnement professionnel."
+    },
+    "values": {
+      "title": "Nos valeurs",
+      "items": {
+        "authenticity": {
+          "title": "Authenticité",
+          "description": "Valoriser la culture, les traditions et les paysages de Madagascar."
+        },
+        "trust": {
+          "title": "Confiance",
+          "description": "Construire une relation transparente avec chaque voyageur."
+        },
+        "excellence": {
+          "title": "Excellence",
+          "description": "Fournir un service de qualité à chaque étape du voyage."
+        },
+        "respect": {
+          "title": "Respect",
+          "description": "Promouvoir un tourisme responsable et durable."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "Utiliser les technologies modernes pour améliorer l'expérience utilisateur."
+        }
+      }
+    },
+    "promise": {
+      "title": "Notre promesse",
+      "text": "Chaque voyage réservé avec MadaTours doit être synonyme de sérénité, de découverte et de souvenirs inoubliables."
+    },
+    "closing": {
+      "title": "Envie de commencer votre voyage ?",
+      "cta": "Découvrir nos excursions"
+    }
   }
 }
