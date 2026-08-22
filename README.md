@@ -1,6 +1,6 @@
 # 🌍 MadaTours
 
-### Discover Madagascar. One journey at a time.
+## Discover Madagascar. One journey at a time
 
 MadaTours is a modern travel website designed around the discovery of **Madagascar and its destinations**.
 
