@@ -351,5 +351,43 @@
       "title": "Vonona hanomboka ny dianao?",
       "cta": "Hijery ireo fitsangantsanganana"
     }
+  },
+  "Gallery": {
+    "eyebrow": "Amin'ny sary",
+    "pageTitle": "Sary",
+    "pageIntro": "Topi-maso an-tsary momba ireo fitsangantsanganana sy fizahan-tany ataon'ny MadaTours. Kitiho ny sary iray mba hahafantarana ny fitsangantsanganana na ny fizahan-tany mifandraika aminy."
+  },
+  "Reviews": {
+    "eyebrow": "Ny hevitry ny mpizahatany",
+    "pageTitle": "Hevitra",
+    "pageIntro": "Topi-maso amin'ny hevitry ny mpizahatany — mbola tsy tapitra ny votoaty, miandry ny tena rafitra fandraisana hevitra.",
+    "mockNotice": "Hevitra natao ho ohatra ihany — miandry ny tena rafitra fandraisana hevitra.",
+    "relatedToLabel": "Momba ny",
+    "items": {
+      "sophie-m": {
+        "name": "[OHATRA] Sophie Martin",
+        "text": "Traikefa tsy hay hadinoina! Fantatry ny mpitari-dàlana daholo ny nosy, ary mihoatra noho ny sary ny hakanton'ny farihin-drano any Nosy Iranja."
+      },
+      "james-c": {
+        "name": "[OHATRA] James Carter",
+        "text": "Ny fahitana akaiky ireo baleiny dia ho isan'ny fahatsiarovana tsara indrindra amin'ny diako. Ekipa matihanina sady mampitony."
+      },
+      "rindra-a": {
+        "name": "[OHATRA] Rindra Andriamalala",
+        "text": "Amiko izay Malagasy, dia ankasitrahako ny fanajana ampiasain'ny MadaTours mba hampahafantatra ny kolontsainay amin'ny mpitsidika. Asa tsara."
+      },
+      "claire-d": {
+        "name": "[OHATRA] Claire Dupuis",
+        "text": "Fizahan-tany tsara sy be zavatra, saingy lava kely ny sasany amin'ireo dia — nefa tsy nanimba ny traikefa ankapobeny. Tena tiako."
+      },
+      "thomas-w": {
+        "name": "[OHATRA] Thomas Weber",
+        "text": "Harena tokoa ny tobim-pirenena Lokobe, ary tena nahaliana ny mpitari-dàlanay. Fandaminana tsara tanteraka hatramin'ny fiandohana ka hatramin'ny farany."
+      },
+      "amina-h": {
+        "name": "[OHATRA] Amina Hassan",
+        "text": "Dia voalohany tany Madagasikara, ary nataon'ny MadaTours ho tsotra sy mahafinaritra ny dingana rehetra. Hiverina izahay!"
+      }
+    }
   }
 }

@@ -51,6 +51,6 @@ export function getGalleryImages(
   return Array.from({ length: n }, (_, i) => `/images/${section}/${slug}/gallery-${i + 1}.jpg`);
 }
 
-export function getHomeImage(name: string): string {
-  return `/images/home/${name}.jpg`;
+export function getHomeImage(name: string, extension: string = "jpg"): string {
+  return `/images/home/${name}.${extension}`;
 }

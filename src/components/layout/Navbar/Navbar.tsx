@@ -51,7 +51,26 @@ export function Navbar() {
       {/* Logo — chemin "/logo.svg" à ajuster selon le nom réel
           de ton fichier une fois déposé dans public/ */}
       <Link href="/" className={styles.logo}>
-        <Image src="/logo.svg" alt="MadaTours" width={140} height={40} priority />
+        {/* Deux logos superposés, un seul visible à la fois via CSS
+            (classe .dark sur <html>) : le fond de la Navbar change
+            selon le thème, contrairement au Footer qui reste toujours
+            sombre (voir Footer.tsx, qui n'a besoin que du logo clair). */}
+        <Image
+          src="/logo.svg"
+          alt="MadaTours"
+          width={96}
+          height={60}
+          priority
+          className={styles.logoLight}
+        />
+        <Image
+          src="/logo-dark.svg"
+          alt="MadaTours"
+          width={96}
+          height={60}
+          priority
+          className={styles.logoDarkVariant}
+        />
       </Link>
 
       <ul className={styles.linksDesktop}>

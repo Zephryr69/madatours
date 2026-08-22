@@ -39,7 +39,10 @@ export function Footer() {
         {/* Marque + slogan + réseaux — pas de titre, comme le portfolio */}
         <div className={styles.column}>
           <Link href="/" className={styles.brand} aria-label={t("homeAriaLabel")}>
-            <Image src="/logo.svg" alt="MadaTours" width={140} height={40} priority />
+            {/* Le Footer a toujours un fond sombre (--footer-bg), quel que
+                soit le thème du site : on utilise donc systématiquement la
+                variante claire du logo, jamais la version standard. */}
+            <Image src="/logo-dark.svg" alt="MadaTours" width={96} height={60} priority />
           </Link>
           <p className={styles.slogan}>{t("slogan")}</p>
 

@@ -35,7 +35,13 @@
   z-index: 1; /* passe au-dessus de l'image + du voile, quel que soit le thème */
   max-width: 720px;
   padding: var(--space-3xl) var(--space-lg) var(--space-4xl);
-  color: var(--color-surface);
+  /* Couleur fixe (pas un token) : volontaire. Le hero a toujours le même
+     voile sombre derrière son texte, en thème clair COMME en thème sombre
+     (le voile ne change pas avec le thème). --color-surface, lui, change
+     de valeur selon le thème (clair : quasi blanc ; sombre : slate foncé)
+     — l'utiliser ici rendait le texte du hero illisible en thème sombre,
+     puisqu'il devenait presque aussi sombre que le fond. */
+  color: #F8FAFC;
 }
 
 .eyebrow {
@@ -48,7 +54,7 @@
   color: var(--color-primary-light);
   margin-bottom: var(--space-sm);
   opacity: 0;
-  animation: heroFadeUp var(--duration-slow) var(--ease-out) 100ms forwards;
+  animation: heroFadeUp var(--duration-slow) ease-out 100ms forwards;
 }
 
 /* Échelle "Display" officielle (Responsive.md §9, Typography.md §4 "Display XL") : 64px desktop / 42px mobile, poids 700, hauteur de ligne 72px */
@@ -59,7 +65,7 @@
   line-height: 72px;
   margin: 0 0 var(--space-md);
   opacity: 0;
-  animation: heroFadeUp var(--duration-slow) var(--ease-out) 250ms forwards;
+  animation: heroFadeUp var(--duration-slow) ease-out 250ms forwards;
 }
 
 .heroSubtitle {
@@ -70,7 +76,7 @@
   max-width: 56ch;
   margin: 0 0 var(--space-xl);
   opacity: 0;
-  animation: heroFadeUp var(--duration-slow) var(--ease-out) 400ms forwards;
+  animation: heroFadeUp var(--duration-slow) ease-out 400ms forwards;
 }
 
 .heroActions {
@@ -78,7 +84,7 @@
   gap: var(--space-md);
   flex-wrap: wrap;
   opacity: 0;
-  animation: heroFadeUp var(--duration-slow) var(--ease-out) 550ms forwards;
+  animation: heroFadeUp var(--duration-slow) ease-out 550ms forwards;
 }
 
 @keyframes heroFadeUp {
@@ -134,7 +140,7 @@
   gap: var(--space-sm);
   padding: var(--space-md);
   border-radius: var(--radius-xl);
-  transition: transform var(--duration-base) var(--ease-out), box-shadow var(--duration-base) var(--ease-out);
+  transition: transform var(--duration-base) ease-out, box-shadow var(--duration-base) ease-out;
 }
 
 .valueCard:hover {
@@ -152,7 +158,7 @@
   color: var(--color-surface);
   font-size: var(--icon-lg);
   margin-bottom: var(--space-xs);
-  transition: transform var(--duration-base) var(--ease-out);
+  transition: transform var(--duration-base) ease-out;
 }
 
 .valueCard:hover .valueIcon {

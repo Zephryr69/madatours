@@ -24,6 +24,26 @@
   transition: transform var(--duration-base), box-shadow var(--duration-base);
 }
 
+/* Neutralise le reset global de Tailwind (preflight.css : "img { max-width:
+   100%; height: auto; }"), qui casse le ratio largeur/hauteur fixé par
+   next/image (width={140} height={40}) — plus visible sur mobile. */
+.logo img {
+  width: 96px;
+  height: 60px;
+}
+
+.logoDarkVariant {
+  display: none;
+}
+
+:global(.dark) .logoLight {
+  display: none;
+}
+
+:global(.dark) .logoDarkVariant {
+  display: inline-block;
+}
+
 /* Effet "plaque qui se soulève" : légère élévation + ombre qui
    se creuse, comme une tuile qui se détache de la surface. */
 .logo:hover {

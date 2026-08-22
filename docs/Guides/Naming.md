@@ -27,13 +27,15 @@ public/images/
   excursions/<slug>/gallery-2.jpg      (gallery-1 à gallery-6, au besoin)
   tours/<slug>/cover.jpg
   tours/<slug>/gallery-1.jpg
-  home/hero.jpg                      → grande image de l'accueil
+  home/hero.png                      → grande image de l'accueil (exception : .png, voir note ci-dessous)
   home/<nom-libre>.jpg               → autres visuels de l'accueil
   placeholders/excursion-placeholder.jpg
   placeholders/tour-placeholder.jpg  → utilisées si un cover.jpg manque encore
 ```
 
-Règle : toujours en minuscules, toujours `.jpg`, jamais d'espace ni d'accent dans un nom de fichier.
+Règle : toujours en minuscules, toujours `.jpg` par défaut, jamais d'espace ni d'accent dans un nom de fichier.
+
+> **Exception** : `home/hero.png` est en `.png` plutôt qu'en `.jpg` (choix assumé). `getHomeImage()` accepte un deuxième paramètre optionnel pour l'extension (`getHomeImage("hero", "png")`) si une autre image de l'accueil a besoin d'un format différent.
 
 La logique complète (comment le code construit ces chemins) est dans `src/lib/images.ts`.
 

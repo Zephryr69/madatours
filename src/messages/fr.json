@@ -351,5 +351,43 @@
       "title": "Envie de commencer votre voyage ?",
       "cta": "Découvrir nos excursions"
     }
+  },
+  "Gallery": {
+    "eyebrow": "En images",
+    "pageTitle": "Galerie",
+    "pageIntro": "Un aperçu en photos des excursions et circuits proposés par MadaTours. Cliquez sur une photo pour découvrir l'excursion ou le circuit correspondant."
+  },
+  "Reviews": {
+    "eyebrow": "Ce qu'en disent les voyageurs",
+    "pageTitle": "Avis",
+    "pageIntro": "Un aperçu des retours de voyageurs — contenu provisoire en attendant le vrai système d'avis.",
+    "mockNotice": "Avis fictifs, à titre d'exemple — en attente d'un vrai système de collecte des avis.",
+    "relatedToLabel": "À propos de",
+    "items": {
+      "sophie-m": {
+        "name": "[FICTIF] Sophie Martin",
+        "text": "Une expérience inoubliable ! Le guide connaissait chaque recoin de l'île, et le lagon de Nosy Iranja est encore plus beau qu'en photo."
+      },
+      "james-c": {
+        "name": "[FICTIF] James Carter",
+        "text": "Voir les baleines à bosse d'aussi près restera un des plus beaux souvenirs de mon voyage. Équipe professionnelle et rassurante."
+      },
+      "rindra-a": {
+        "name": "[FICTIF] Rindra Andriamalala",
+        "text": "En tant que Malgache, j'ai apprécié le respect avec lequel MadaTours présente notre culture aux visiteurs. Du beau travail."
+      },
+      "claire-d": {
+        "name": "[FICTIF] Claire Dupuis",
+        "text": "Circuit riche et bien pensé, quelques trajets un peu longs mais rien qui n'entache l'expérience globale. Je recommande."
+      },
+      "thomas-w": {
+        "name": "[FICTIF] Thomas Weber",
+        "text": "La réserve de Lokobe est un vrai joyau, et notre guide était passionnant. Organisation impeccable du début à la fin."
+      },
+      "amina-h": {
+        "name": "[FICTIF] Amina Hassan",
+        "text": "Premier voyage à Madagascar, et MadaTours a rendu chaque étape simple et agréable. On reviendra !"
+      }
+    }
   }
 }

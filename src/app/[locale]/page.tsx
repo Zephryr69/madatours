@@ -41,7 +41,7 @@ export default function Home() {
         {/* 1. Hero — promesse de marque + première action */}
         <section className={styles.hero}>
           <SafeImage
-            src={getHomeImage("hero")}
+            src={getHomeImage("hero", "png")}
             fallbackSrc={getPlaceholderImage("excursions")}
             alt=""
             fill

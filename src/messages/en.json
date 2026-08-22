@@ -351,5 +351,43 @@
       "title": "Ready to start your journey?",
       "cta": "Discover our excursions"
     }
+  },
+  "Gallery": {
+    "eyebrow": "In pictures",
+    "pageTitle": "Gallery",
+    "pageIntro": "A photo preview of the excursions and tours offered by MadaTours. Click a photo to discover the matching excursion or tour."
+  },
+  "Reviews": {
+    "eyebrow": "What travelers say",
+    "pageTitle": "Reviews",
+    "pageIntro": "A preview of traveler feedback — placeholder content while the real review system is being built.",
+    "mockNotice": "Sample reviews — a real review collection system is coming soon.",
+    "relatedToLabel": "About",
+    "items": {
+      "sophie-m": {
+        "name": "[MOCK] Sophie Martin",
+        "text": "An unforgettable experience! The guide knew every corner of the island, and the Nosy Iranja lagoon is even more beautiful in person."
+      },
+      "james-c": {
+        "name": "[MOCK] James Carter",
+        "text": "Seeing humpback whales up close will stay one of the best memories of my trip. Professional and reassuring team."
+      },
+      "rindra-a": {
+        "name": "[MOCK] Rindra Andriamalala",
+        "text": "As a Malagasy person, I appreciated how respectfully MadaTours presents our culture to visitors. Great work."
+      },
+      "claire-d": {
+        "name": "[MOCK] Claire Dupuis",
+        "text": "A rich, well-designed tour — a few drives felt a bit long, but nothing that took away from the overall experience. Recommended."
+      },
+      "thomas-w": {
+        "name": "[MOCK] Thomas Weber",
+        "text": "The Lokobe reserve is a real gem, and our guide was fascinating. Flawless organization from start to finish."
+      },
+      "amina-h": {
+        "name": "[MOCK] Amina Hassan",
+        "text": "First trip to Madagascar, and MadaTours made every step simple and enjoyable. We'll be back!"
+      }
+    }
   }
 }
