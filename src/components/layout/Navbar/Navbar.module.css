@@ -20,8 +20,12 @@
   padding: var(--space-xs) var(--space-sm);
   border-radius: var(--radius-md);
   background-color: var(--color-background);
-  box-shadow: var(--shadow-sm);
-  transition: transform var(--duration-base), box-shadow var(--duration-base);
+  opacity: 1;
+  transition: opacity var(--duration-base) var(--ease-out);
+}
+
+.logo:hover {
+  opacity: 0.85;
 }
 
 /* Neutralise le reset global de Tailwind (preflight.css : "img { max-width:
@@ -42,13 +46,6 @@
 
 :global(.dark) .logoDarkVariant {
   display: inline-block;
-}
-
-/* Effet "plaque qui se soulève" : légère élévation + ombre qui
-   se creuse, comme une tuile qui se détache de la surface. */
-.logo:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
 }
 
 .linksDesktop {

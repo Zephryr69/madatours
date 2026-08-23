@@ -315,20 +315,79 @@
 
 /* ---------- CTA de clôture ---------- */
 .closing {
-  background: var(--color-primary-dark);
-  color: var(--color-surface);
+  position: relative;
+  overflow: hidden; /* contient les formes décoratives qui dépassent */
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, #064E3B 100%);
   text-align: center;
   padding: var(--space-4xl) var(--space-lg);
+}
+
+/* Deux taches de couleur floutées en fond, purement décoratives
+   (aria-hidden, pas de contenu informatif) — donnent de la profondeur
+   sans réintroduire une vraie image. */
+.closingBlobPrimary,
+.closingBlobAccent {
+  position: absolute;
+  border-radius: var(--radius-full);
+  filter: blur(60px);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.closingBlobPrimary {
+  width: 420px;
+  height: 420px;
+  background: var(--color-accent);
+  top: -160px;
+  left: -120px;
+}
+
+.closingBlobAccent {
+  width: 320px;
+  height: 320px;
+  background: var(--color-secondary);
+  bottom: -140px;
+  right: -80px;
+}
+
+/* Grande icône en filigrane, purement décorative. */
+.closingIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 380px;
+  color: var(--color-surface);
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+/* Le flex + gap vit ici, sur le contenu réellement affiché (à l'intérieur
+   du <Reveal>), plutôt que sur .closing directement : .closing n'a
+   qu'un seul enfant direct (le <Reveal>), donc un gap posé sur .closing
+   n'a aucun effet entre le titre/sous-titre/bouton qu'il contient.
+   max-width aligné sur le container principal (1280px, Responsive.md §5)
+   pour que le titre ne s'étire pas sur toute la largeur d'un grand écran.
+   position relative + z-index : passe au-dessus des taches/icône de fond. */
+.closingInner {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--space-md);
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 /* Échelle "H1" officielle : 48px desktop / 36px mobile, poids 700, hauteur de ligne 56px
-   (titre de clôture, un cran sous le Display du hero) */
+   (titre de clôture, un cran sous le Display du hero)
+   Couleur fixe (pas var(--color-surface)) : ce fond sombre ne change pas
+   avec le thème, alors que --color-surface si (quasi blanc en clair,
+   slate foncé en sombre) — même bug que le hero, corrigé pareil. */
 .closingTitle {
   font-family: var(--font-accent);
+  color: #F8FAFC;
   font-size: var(--text-4xl);
   font-weight: 700;
   line-height: 56px;
@@ -338,8 +397,43 @@
 .closingSubtitle {
   color: #D1FAE5;
   font-weight: 400;
+  text-align: center; /* explicite plutôt que seulement hérité de .closing */
   max-width: 48ch;
-  margin: 0 0 var(--space-sm);
+  margin: 0 auto;
+}
+
+/* Le bouton lui-même garde le style de Button (variant="secondary") —
+   on ajoute juste un peu de respiration pour la flèche et une ombre
+   qui se creuse au survol, cohérente avec Foundations.md §3. */
+.closingButton {
+  gap: var(--space-sm);
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--duration-base) var(--ease-out), box-shadow var(--duration-base) var(--ease-out);
+}
+
+.closingButton:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+}
+
+.closingButtonIcon {
+  transition: transform var(--duration-base) var(--ease-out);
+}
+
+.closingButton:hover .closingButtonIcon {
+  transform: translateX(4px);
+}
+
+@media (max-width: 767px) {
+  .closingIcon {
+    font-size: 220px;
+  }
+
+  .closingBlobPrimary,
+  .closingBlobAccent {
+    width: 220px;
+    height: 220px;
+  }
 }
 
 /* ---------- Responsive ----------

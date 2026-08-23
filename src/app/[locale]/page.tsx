@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { FaLeaf, FaHandshake, FaSeedling, FaMagnifyingGlass, FaPaperPlane, FaPlane } from "react-icons/fa6";
+import { FaLeaf, FaHandshake, FaSeedling, FaMagnifyingGlass, FaPaperPlane, FaPlane, FaCompass, FaArrowRight } from "react-icons/fa6";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/Button";
@@ -159,10 +159,19 @@ export default function Home() {
 
         {/* 6. CTA final */}
         <section className={styles.closing}>
-          <Reveal>
+          <span className={styles.closingBlobPrimary} aria-hidden="true" />
+          <span className={styles.closingBlobAccent} aria-hidden="true" />
+          <FaCompass className={styles.closingIcon} aria-hidden="true" />
+          <Reveal className={styles.closingInner}>
             <h2 className={styles.closingTitle}>{t("closing.title")}</h2>
             <p className={styles.closingSubtitle}>{t("closing.subtitle")}</p>
-            <Button href="/tours" size="large" variant="secondary">
+            <Button
+              href="/tours"
+              size="large"
+              variant="secondary"
+              className={styles.closingButton}
+              iconRight={<FaArrowRight className={styles.closingButtonIcon} aria-hidden="true" />}
+            >
               {t("closing.cta")}
             </Button>
           </Reveal>
